@@ -17,3 +17,4 @@ document.write(3+3); //An example of an expression within
 
 var Sent1 = "This is the beginning of the string", Sent2 = " and this is the end of the string"; //Declaration of two variables
 document.write(Sent1 + Sent2); //Expression concatenating Sent1 and Sent2 together.
+
