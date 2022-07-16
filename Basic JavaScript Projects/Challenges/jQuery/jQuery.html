@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function() { //appending html code to document once original doc loads.
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Pragraph 3</p>\
+                            <h2 id='fade'>Fade</h2>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#2").css({"color":"red"}); //uses jQuery to find and add css to new elements
+            $("#3").click(function() { //click event from jQuery to hide newly made h1 element.
+                $("h1").hide();
+            });
+            $("#fade").click(function () { //click event fromjQuery to fadeOut newly made h2 element
+                $("h2").fadeOut();
+            });
+
+        });
+    </script>
+</html>
